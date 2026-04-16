@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elite Recruitment Agency | Jobs Abroad Kenya</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+html {scroll-behavior:smooth;}
+body {margin:0;font-family:'Poppins',sans-serif;background:#f5f7fa;color:#333}
+
+/* Header */
+header {
+    position:sticky;
+    top:0;
+    background:rgba(13,27,42,0.95);
+    backdrop-filter: blur(8px);
+    color:#fff;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+}
+
+.logo img {height:50px}
+
+nav a {
+    color:#fff;
+    margin:0 12px;
+    text-decoration:none;
+    font-weight:500;
+}
+
+nav a:hover {color:#ff6600}
+
+/* Hero */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url('images/about.png') center/cover;
+    height:90vh;
+    color:#fff;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1 {font-size:52px;margin-bottom:10px}
+.hero p {font-size:20px;max-width:600px}
+
+.btn {
+    margin-top:20px;
+    padding:14px 24px;
+    background:#ff6600;
+    color:#fff;
+    border-radius:8px;
+    text-decoration:none;
+    transition:0.3s;
+    font-weight:600;
+}
+
+.btn:hover {background:#e65c00}
+
+/* Sections */
+.section {
+    padding:70px 20px;
+    max-width:1100px;
+    margin:auto;
+}
+
+.section h2, .section h1 {
+    text-align:center;
+    margin-bottom:30px;
+}
+
+/* BOX */
+.box {
+    background:#fff;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    margin-bottom:20px;
+    transition:0.3s;
+    text-align:center;
+}
+
+.box:hover {transform:translateY(-5px)}
+
+.box img {
+    width:100%;
+    max-height:250px;
+    object-fit:cover;
+    border-radius:12px;
+    margin-bottom:15px;
+}
+
+/* VALUES */
+.values {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.value-card {
+    background:#fff;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    text-align:center;
+    transition:0.3s;
+}
+
+.value-card:hover {transform:translateY(-5px)}
+
+.value-card img {
+    width:60px;
+    margin-bottom:15px;
+}
+
+/* CTA */
+.cta {
+    background:#0d1b2a;
+    color:#fff;
+    text-align:center;
+    padding:60px 20px;
+    margin-top:40px;
+}
+
+/* TESTIMONIALS */
+.testimonial-container {
+    position:relative;
+    overflow:hidden;
+}
+
+.testimonial-track {
+    display:flex;
+    transition:transform 0.5s ease-in-out;
+}
+
+.testimonial {
+    min-width:100%;
+    padding:30px;
+    text-align:center;
+}
+
+/* FOOTER */
+footer {
+    background:#0d1b2a;
+    color:#fff;
+    padding:40px 20px;
+}
+
+.footer-container {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.footer-logo {height:50px;margin-bottom:10px}
+
+.footer-links ul {
+    list-style:none;
+    padding:0;
+}
+
+.footer-links ul li {
+    margin:8px 0;
+}
+
+.footer-links a {
+    color:#fff;
+    text-decoration:none;
+}
+
+.footer-links a:hover {color:#ff6600}
+
+.footer-bottom {
+    text-align:center;
+    margin-top:20px;
+    border-top:1px solid #444;
+    padding-top:15px;
+}
+
+/* WHATSAPP */
+.whatsapp {
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:#fff;
+    padding:16px;
+    border-radius:50%;
+    font-size:22px;
+    text-decoration:none;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    animation:pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {box-shadow:0 0 0 0 rgba(37,211,102,0.6);}
+    70% {box-shadow:0 0 0 15px rgba(37,211,102,0);}
+    100% {box-shadow:0 0 0 0 rgba(37,211,102,0);}
+}
+
+@media(max-width:768px){
+    .hero h1 {font-size:34px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <img src="images/logo.png" onerror="this.src='https://via.placeholder.com/150x50?text=LOGO'">
+    </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Secure Your Dream Job Abroad</h1>
+    <p>Connecting African talent to verified job opportunities in Qatar, Kuwait, and the UAE</p>
+    <a href="jobs.html" class="btn">View Jobs</a>
+</section>
+
+<section class="section">
+    <h1>About Us</h1>
+
+    <div class="box">
+        <img src="images/mission.jpg">
+        <p><strong>Elite Recruitment Agency</strong> is a trusted recruitment platform connecting qualified workers with verified employers across Qatar, Kuwait, and the United Arab Emirates. We ensure safe, transparent, and rewarding employment opportunities abroad.</p>
+    </div>
+
+    <div class="box">
+        <img src="images/vision.webp">
+        <h2>Our Mission</h2>
+        <p>We are committed to providing life-changing job opportunities abroad, empowering individuals to secure meaningful employment and build better futures.</p>
+    </div>
+
+    <div class="box">
+        <img src="images/vision2.jpg">
+        <h2>Our Vision</h2>
+        <p>Our vision is to become Africa’s leading recruitment agency.</p>
+    </div>
+
+    <h2>Our Core Values</h2>
+
+    <div class="values">
+        <div class="value-card">
+            <img src="https://img.icons8.com/ios-filled/100/ff6600/handshake.png">
+            <h3>Integrity</h3>
+        </div>
+
+        <div class="value-card">
+            <img src="https://img.icons8.com/ios-filled/100/ff6600/trust.png">
+            <h3>Trust</h3>
+        </div>
+
+        <div class="value-card">
+            <img src="https://img.icons8.com/ios-filled/100/ff6600/lightning-bolt.png">
+            <h3>Efficiency</h3>
+        </div>
+
+        <div class="value-card">
+            <img src="https://img.icons8.com/ios-filled/100/ff6600/globe.png">
+            <h3>Global Reach</h3>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <h2>What Our Clients Say</h2>
+
+    <div class="testimonial-container">
+        <div class="testimonial-track" id="testimonialTrack">
+
+            <div class="testimonial">
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>I got a job in Qatar within weeks.</p>
+                <h4>- James Mwangi</h4>
+            </div>
+
+            <div class="testimonial">
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>Very professional agency.</p>
+                <h4>- Sarah Wanjiku</h4>
+            </div>
+
+            <div class="testimonial">
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>Now working in Kuwait.</p>
+                <h4>- David Otieno</h4>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="cta">
+        <h2>Ready to Start Your Journey Abroad?</h2>
+        <p>Apply today and take the first step toward a better future</p>
+        <a href="jobs.html" class="btn">Apply Now</a>
+    </div>
+</section>
+
+<footer>
+  <div class="footer-container">
+
+    <div>
+      <img src="images/logo.png" class="footer-logo">
+      <p>Connecting African talent to global job opportunities.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="jobs.html">Jobs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>Contact</h4>
+      <p>📍 Nairobi, Kenya</p>
+      <p>📞 +254 116 752 273</p>
+      <p>✉ eliterecruitment707@gmail.com</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Elite Recruitment Agency. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/254116752273">💬</a>
+
+<script>
+let index = 0;
+const track = document.getElementById('testimonialTrack');
+const slides = document.querySelectorAll('.testimonial');
+
+setInterval(() => {
+    index = (index + 1) % slides.length;
+    track.style.transform = `translateX(-${index * 100}%)`;
+}, 4000);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Medical Booking | Elite Recruitment Agency</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+<style>
+body {margin:0;font-family:'Poppins',sans-serif;background:#f5f7fa;color:#333}
+
+/* HEADER */
+header {
+background:#0d1b2a;
+color:#fff;
+padding:15px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+nav a {color:#fff;margin:0 10px;text-decoration:none}
+nav a:hover {color:#ff6600}
+
+/* HERO */
+.hero {
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url('https://images.unsplash.com/photo-1588776814546-ec7e0b93d6d2') center/cover;
+height:50vh;
+color:#fff;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+}
+
+/* SECTION */
+.section {padding:40px 20px;max-width:800px;margin:auto}
+
+.form-box {
+background:#fff;
+padding:25px;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+input, select, textarea {
+width:100%;
+padding:12px;
+margin:10px 0;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+button {
+background:#ff6600;
+color:#fff;
+border:none;
+padding:12px;
+width:100%;
+border-radius:6px;
+cursor:pointer;
+}
+button:hover {background:#e65c00}
+
+/* PAYMENT */
+hr {
+border:none;
+border-top:1px solid #ddd;
+margin:15px 0;
+}
+
+/* INFO */
+.info {
+background:#fff3e6;
+padding:20px;
+border-radius:10px;
+margin-top:20px;
+}
+
+/* FOOTER */
+footer {
+background:#0d1b2a;
+color:#fff;
+padding:40px 20px;
+}
+
+.footer-container {
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.footer-logo {height:50px;margin-bottom:10px}
+
+.footer-links ul {list-style:none;padding:0}
+.footer-links ul li {margin:8px 0}
+.footer-links a {color:#fff;text-decoration:none}
+.footer-links a:hover {color:#ff6600}
+
+.footer-bottom {
+text-align:center;
+margin-top:20px;
+border-top:1px solid #444;
+padding-top:10px;
+}
+
+/* WHATSAPP */
+.whatsapp {
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:#fff;
+padding:15px;
+border-radius:50%;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div>
+<img src="images/logo.png" style="height:40px;"
+onerror="this.src='https://via.placeholder.com/150x50?text=LOGO'">
+</div>
+<nav>
+<a href="index.html">Home</a>
+<a href="jobs.html">Jobs</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Medical Booking</h1>
+<p>Book your pre-travel or job medical examination</p>
+</section>
+
+<section class="section">
+
+<div class="form-box">
+<h2>Book Appointment</h2>
+
+<form id="bookingForm">
+
+<input type="text" name="name" placeholder="Full Name" required>
+<input type="tel" name="phone" placeholder="Phone Number" required>
+<input type="email" name="email" placeholder="Email Address">
+
+<select name="type" required>
+<option value="">Select Medical Type</option>
+<option>Pre-Travel Medical</option>
+<option>GCC Medical</option>
+<option>General Checkup</option>
+</select>
+
+<input type="date" name="date" required>
+
+<!-- PAYMENT SECTION -->
+<h3>Payment Details</h3>
+
+<p><strong>Medical Fee:</strong> KSh 10,500</p>
+
+<p><strong>Paybill:</strong> 714777</p>
+<p><strong>Account No:</strong> 420200844101</p>
+
+<hr>
+
+<p><strong>Pochi la Biashara:</strong></p>
+<p>📱 Go to M-Pesa</p>
+<p>✔ Select <strong>Pochi la Biashara</strong></p>
+<p>✔ Enter Number: <strong>0116752273</strong></p>
+<p>✔ Enter Amount: <strong>KSh 10,500</strong></p>
+
+<p style="font-size:14px;color:#555;">
+You can pay using either Paybill or Pochi la Biashara.
+</p>
+
+<input type="text" name="code" placeholder="Mpesa Transaction Code" required>
+
+<textarea name="notes" placeholder="Additional Notes"></textarea>
+
+<button type="submit">Confirm Booking</button>
+<button type="button" id="downloadBtn" style="display:none;background:#0d1b2a;">
+Download Receipt
+</button>
+
+</form>
+</div>
+
+<div class="info">
+<h3>Important Information</h3>
+<p>
+✔ Medical required for Gulf jobs<br>
+✔ Carry Passport/ID<br>
+✔ Arrive early<br>
+✔ Location: Buruburu, Nairobi
+</p>
+</div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-container">
+
+    <div>
+      <img src="images/logo.png" class="footer-logo"
+      onerror="this.src='https://via.placeholder.com/150x50?text=LOGO'">
+      <p>Connecting African talent to global job opportunities.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="jobs.html">Jobs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>Contact</h4>
+      <p>📍 Nairobi, Kenya</p>
+      <p>📞 +254 116 752 273</p>
+      <p>✉ eliterecruitment707@gmail.com</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Elite Recruitment Agency. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/254116752273">💬</a>
+
+<script>
+const form = document.getElementById('bookingForm');
+
+form.addEventListener('submit', function(e){
+e.preventDefault();
+
+const name = form.name.value;
+const phone = form.phone.value;
+const type = form.type.value;
+const date = form.date.value;
+const code = form.code.value;
+
+const { jsPDF } = window.jspdf;
+const doc = new jsPDF();
+
+doc.text("ELITE RECRUITMENT AGENCY", 20, 20);
+doc.text(`Name: ${name}`, 20, 40);
+doc.text(`Phone: ${phone}`, 20, 50);
+doc.text(`Medical: ${type}`, 20, 60);
+doc.text(`Date: ${date}`, 20, 70);
+doc.text(`Mpesa Code: ${code}`, 20, 80);
+
+window.generatedPDF = doc;
+document.getElementById('downloadBtn').style.display = 'block';
+
+alert("Booking successful!");
+
+window.open(`https://wa.me/254116752273?text=Medical Booking: ${name}, ${type}, ${date}`);
+});
+
+document.getElementById('downloadBtn').addEventListener('click', function(){
+if(window.generatedPDF){
+window.generatedPDF.save("Receipt.pdf");
+}
+});
+</script>
+
+</body>
+</html>

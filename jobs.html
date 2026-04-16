@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jobs | Elite Recruitment Agency</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+body {margin:0;font-family:'Poppins',sans-serif;background:#f5f7fa;color:#333}
+
+/* HEADER */
+header {
+background:#0d1b2a;
+color:#fff;
+padding:15px 20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav a {
+color:#fff;
+margin:0 10px;
+text-decoration:none;
+font-size:14px;
+}
+nav a:hover {color:#ff6600}
+
+/* SECTION */
+.section {padding:40px 20px}
+h2 {text-align:center;margin-bottom:25px}
+.country {margin-bottom:50px}
+
+/* JOB GRID */
+.jobs {
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+/* CARD */
+.card {
+background:#fff;
+padding:20px;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+.card:hover {transform:translateY(-5px)}
+
+.salary {color:#ff6600;font-weight:600;margin:10px 0}
+
+/* BUTTON */
+.btn {
+display:inline-block;
+padding:10px 15px;
+background:#25D366;
+color:#fff;
+border:none;
+border-radius:6px;
+cursor:pointer;
+margin-top:10px;
+}
+.btn:hover {background:#1ebe5d}
+
+/* FORM */
+form {
+max-width:500px;
+margin:auto;
+background:#fff;
+padding:20px;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+input, select {
+width:100%;
+padding:10px;
+margin:10px 0;
+border-radius:6px;
+border:1px solid #ccc;
+box-sizing:border-box;
+}
+
+/* FOOTER */
+footer {
+background:#0d1b2a;
+color:#fff;
+padding:40px 20px;
+}
+
+.footer-container {
+display:flex;
+justify-content:space-between;
+flex-wrap:wrap;
+gap:20px;
+}
+
+.footer-logo {
+height:40px;
+margin-bottom:10px;
+}
+
+.footer-links ul {
+list-style:none;
+padding:0;
+margin:0;
+}
+
+.footer-links li {
+margin:8px 0;
+}
+
+.footer-links a {
+color:#fff;
+text-decoration:none;
+}
+
+.footer-links a:hover {
+color:#ff6600;
+}
+
+.footer-bottom {
+text-align:center;
+margin-top:20px;
+border-top:1px solid #444;
+padding-top:15px;
+}
+
+/* WHATSAPP */
+.whatsapp {
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:#fff;
+padding:15px;
+border-radius:50%;
+text-decoration:none;
+font-size:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<img src="images/logo.png" style="height:40px;">
+<nav>
+<a href="index.html">Home</a>
+<a href="jobs.html">Jobs</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<section class="section">
+
+<!-- QATAR -->
+<div class="country">
+<h2>🇶🇦 Jobs in Qatar</h2>
+<div class="jobs">
+
+<div class="card"><h3>Security Guard</h3><p class="salary">KSh 80K – 140K</p><button class="btn" onclick="applyJob('Security Guard - Qatar')">Apply</button></div>
+<div class="card"><h3>Housekeeping</h3><p class="salary">KSh 70K – 120K</p><button class="btn" onclick="applyJob('Housekeeping - Qatar')">Apply</button></div>
+<div class="card"><h3>Waiter / Waitress</h3><p class="salary">KSh 90K – 150K</p><button class="btn" onclick="applyJob('Waiter/Waitress - Qatar')">Apply</button></div>
+<div class="card"><h3>Driver</h3><p class="salary">KSh 120K – 180K</p><button class="btn" onclick="applyJob('Driver - Qatar')">Apply</button></div>
+<div class="card"><h3>Construction Worker</h3><p class="salary">KSh 100K – 160K</p><button class="btn" onclick="applyJob('Construction Worker - Qatar')">Apply</button></div>
+<div class="card"><h3>Plumber</h3><p class="salary">KSh 110K – 170K</p><button class="btn" onclick="applyJob('Plumber - Qatar')">Apply</button></div>
+
+</div>
+</div>
+
+<!-- KUWAIT -->
+<div class="country">
+<h2>🇰🇼 Jobs in Kuwait</h2>
+<div class="jobs">
+
+<div class="card"><h3>Security Guard</h3><p class="salary">KSh 70K – 130K</p><button class="btn" onclick="applyJob('Security Guard - Kuwait')">Apply</button></div>
+<div class="card"><h3>Petrol Station Attendant</h3><p class="salary">KSh 60K – 110K</p><button class="btn" onclick="applyJob('Petrol Attendant - Kuwait')">Apply</button></div>
+<div class="card"><h3>Driver</h3><p class="salary">KSh 100K – 160K</p><button class="btn" onclick="applyJob('Driver - Kuwait')">Apply</button></div>
+<div class="card"><h3>Cleaner</h3><p class="salary">KSh 65K – 100K</p><button class="btn" onclick="applyJob('Cleaner - Kuwait')">Apply</button></div>
+<div class="card"><h3>Customer Service</h3><p class="salary">KSh 90K – 140K</p><button class="btn" onclick="applyJob('Customer Service - Kuwait')">Apply</button></div>
+<div class="card"><h3>Plumber</h3><p class="salary">KSh 100K – 160K</p><button class="btn" onclick="applyJob('Plumber - Kuwait')">Apply</button></div>
+<div class="card"><h3>Barista</h3><p class="salary">KSh 95K – 150K</p><button class="btn" onclick="applyJob('Barista - Kuwait')">Apply</button></div>
+<div class="card"><h3>Plant Operator</h3><p class="salary">KSh 120K – 180K</p><button class="btn" onclick="applyJob('Plant Operator - Kuwait')">Apply</button></div>
+<div class="card"><h3>Waiter / Waitress</h3><p class="salary">KSh 90K – 150K</p><button class="btn" onclick="applyJob('Waiter/Waitress - Kuwait')">Apply</button></div>
+<div class="card"><h3>Housekeeper</h3><p class="salary">KSh 70K – 120K</p><button class="btn" onclick="applyJob('Housekeeper - Kuwait')">Apply</button></div>
+
+</div>
+</div>
+
+<!-- DUBAI -->
+<div class="country">
+<h2>🇦🇪 Jobs in Dubai (UAE)</h2>
+<div class="jobs">
+
+<div class="card"><h3>Security Guard</h3><p class="salary">KSh 90K – 150K</p><button class="btn" onclick="applyJob('Security Guard - Dubai')">Apply</button></div>
+<div class="card"><h3>Barista</h3><p class="salary">KSh 100K – 160K</p><button class="btn" onclick="applyJob('Barista - Dubai')">Apply</button></div>
+<div class="card"><h3>Beautician</h3><p class="salary">KSh 120K – 200K</p><button class="btn" onclick="applyJob('Beautician - Dubai')">Apply</button></div>
+<div class="card"><h3>Waiter / Waitress</h3><p class="salary">KSh 100K – 180K</p><button class="btn" onclick="applyJob('Waiter/Waitress - Dubai')">Apply</button></div>
+<div class="card"><h3>Customer Service</h3><p class="salary">KSh 110K – 170K</p><button class="btn" onclick="applyJob('Customer Service - Dubai')">Apply</button></div>
+
+</div>
+</div>
+
+<!-- APPLICATION FORM -->
+<div class="section" id="apply">
+<h2>Apply for a Job</h2>
+
+<form onsubmit="sendApplication(event)">
+<input type="text" id="name" placeholder="Full Name" required>
+<input type="tel" id="phone" placeholder="Phone Number" required>
+<input type="text" id="passport" placeholder="Passport Number" required>
+
+<select id="job" required>
+<option value="">Select Job</option>
+
+<option>Security Guard - Qatar</option>
+<option>Housekeeping - Qatar</option>
+<option>Waiter/Waitress - Qatar</option>
+<option>Driver - Qatar</option>
+<option>Construction Worker - Qatar</option>
+<option>Plumber - Qatar</option>
+
+<option>Security Guard - Kuwait</option>
+<option>Petrol Attendant - Kuwait</option>
+<option>Driver - Kuwait</option>
+<option>Cleaner - Kuwait</option>
+<option>Customer Service - Kuwait</option>
+
+<option>Security Guard - Dubai</option>
+<option>Barista - Dubai</option>
+<option>Beautician - Dubai</option>
+<option>Waiter/Waitress - Dubai</option>
+<option>Customer Service - Dubai</option>
+<option>Plumber- Kuwait</option>
+<option>Barista- Kuwait</option>
+<option>Plant Operator- Kuwait</option>
+<option>Waiter/Waitress- Kuwait</option>
+<option>Housekeeper- Kuwait</option>
+</select>
+
+<input type="file" id="cv" required>
+
+<button class="btn" id="submitBtn">Submit Application</button>
+</form>
+</div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-container">
+    <div>
+      <img src="images/logo.png" class="footer-logo">
+      <p>Connecting African talent to global job opportunities.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="jobs.html">Jobs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>Contact</h4>
+      <p>📍 Nairobi, Kenya</p>
+      <p>📞 +254 116 752 273</p>
+      <p>✉ eliterecruitment707@gmail.com</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Elite Recruitment Agency. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/254116752273">💬</a>
+
+<script>
+function applyJob(job){
+    document.getElementById("job").value = job;
+    document.getElementById("apply").scrollIntoView({behavior:"smooth"});
+}
+
+async function sendApplication(e){
+    e.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const phone = document.getElementById("phone").value;
+    const passport = document.getElementById("passport").value;
+    const job = document.getElementById("job").value;
+    const file = document.getElementById("cv").files[0];
+    const button = document.getElementById("submitBtn");
+
+    if(!file){
+        alert("Please upload CV");
+        return;
+    }
+
+    let formData = new FormData();
+    formData.append("name", name);
+    formData.append("phone", phone);
+    formData.append("passport", passport);
+    formData.append("job", job);
+    formData.append("cv", file);
+
+    try{
+        button.innerText = "Submitting...";
+        button.disabled = true;
+
+        let res = await fetch("http://localhost:5000/apply", {
+            method: "POST",
+            body: formData
+        });
+
+        if(!res.ok) throw new Error("Server error");
+
+        await res.json();
+
+        alert("Application submitted successfully!");
+        window.open("https://wa.me/254116752273", "_blank");
+
+        document.querySelector("form").reset();
+
+    } catch(err){
+        alert("Error submitting application");
+    } finally {
+        button.innerText = "Submit Application";
+        button.disabled = false;
+    }
+}
+</script>
+
+</body>
+</html>

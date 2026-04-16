@@ -1,0 +1,577 @@
+header {
+background:#0d1b2a;
+color:#fff;
+padding:15px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+}
+@media(max-width:768px){
+nav {
+margin-top:10px;
+}
+nav a {
+display:block;
+margin:5px 0;
+}
+}
+.card h3 {
+margin-bottom:10px;
+}
+
+.card p {
+margin:5px 0;
+}
+.whatsapp {
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:#fff;
+padding:15px;
+border-radius:50%;
+text-decoration:none;
+font-size:20px;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+.btn:hover {
+background:#e65c00;
+}
+form {
+max-width:400px;
+margin:0 auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+form input, form select {
+padding:12px;
+border-radius:6px;
+border:1px solid #ccc;
+font-size:14px;
+}
+
+form button {
+border:none;
+cursor:pointer;
+}
+.logo img {
+width: 20px;
+height: 20px;
+object-fit:contain;
+}
+<style>
+body {margin:0;font-family:'Poppins',sans-serif;background:#f5f7fa;color:#333}
+
+header {
+background:#0d1b2a;color:#fff;
+padding:15px 40px;
+display:flex;justify-content:space-between
+}
+
+nav a {color:#fff;margin:0 10px;text-decoration:none}
+
+.section {padding:50px 20px}
+
+h2 {text-align:center;margin-bottom:30px}
+
+.country {
+margin-bottom:50px;
+}
+
+.jobs {
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card {
+background:#fff;
+padding:20px;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.card:hover {transform:translateY(-5px)}
+
+.salary {color:#ff6600;font-weight:600;margin:10px 0}
+
+.btn {
+display:inline-block;
+padding:10px 15px;
+background:#ff6600;
+color:#fff;
+text-decoration:none;
+border-radius:5px;
+margin-top:10px;
+}
+
+footer {
+background:#0d1b2a;
+color:#fff;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+.whatsapp {
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:#fff;
+padding:15px;
+border-radius:50%;
+text-decoration:none;
+}
+</style>
+/* Testimonials */
+.testimonial-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 700px;
+    margin: auto;
+}
+
+.testimonial-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.testimonial {
+    min-width: 100%;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+/* Buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.prev { left: -10px; }
+.next { right: -10px; }
+footer {
+  background: #0d1b2a;
+  color: #fff;
+  padding: 50px 40px 20px;
+  font-size: 14px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.footer-about {
+  flex: 1 1 250px;
+}
+
+.footer-logo {
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.footer-links, .footer-contact {
+  flex: 1 1 200px;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: #ff6600;
+}
+
+.footer-contact p {
+  margin: 5px 0;
+}
+
+.footer-social a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #ff6600;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 13px;
+  color: #ccc;
+}
+/* Polished Footer */
+footer {
+  background: #0d1b2a;
+  color: #fff;
+  padding: 60px 40px 20px;
+  font-size: 14px;
+  position: relative;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.footer-about, .footer-links, .footer-contact {
+  flex: 1 1 250px;
+}
+
+.footer-logo {
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: #ff6600;
+}
+
+.footer-contact p {
+  margin: 5px 0;
+}
+
+.footer-social a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #ff6600;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 13px;
+  color: #ccc;
+}
+
+/* Adjust WhatsApp button so it floats above footer */
+.whatsapp {
+  position: fixed;
+  bottom: 80px; /* higher so it doesn't overlap footer */
+  right: 20px;
+  background: #25D366;
+  color: #fff;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 22px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+/* Footer */
+footer {
+  background: #0d1b2a;
+  color: #fff;
+  padding: 60px 40px 20px;
+  font-size: 14px;
+  position: relative;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.footer-about, .footer-links, .footer-contact {
+  flex: 1 1 250px;
+}
+
+.footer-logo {
+  height: 50px; /* same as navbar logo */
+  margin-bottom: 15px;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: #ff6600;
+}
+
+.footer-contact p {
+  margin: 5px 0;
+}
+
+.footer-social a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #ff6600;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 13px;
+  color: #ccc;
+}
+
+/* Adjust WhatsApp button */
+.whatsapp {
+  position: fixed;
+  bottom: 80px; /* avoids overlapping footer */
+  right: 20px;
+  background: #25D366;
+  color: #fff;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 22px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+/* Footer */
+footer {
+  background: #0d1b2a;
+  color: #fff;
+  padding: 60px 40px 20px;
+  font-size: 14px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: flex-start; /* ensures logos and content align at top */
+}
+
+.footer-about, .footer-links, .footer-contact {
+  flex: 1 1 250px;
+}
+
+.footer-logo {
+  height: 50px; /* same as navbar */
+  display: block;
+  margin-bottom: 15px;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: #ff6600;
+}
+
+.footer-contact p {
+  margin: 5px 0;
+}
+
+.footer-social a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #ff6600;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 13px;
+  color: #ccc;
+}
+
+/* WhatsApp Button */
+.whatsapp {
+  position: fixed;
+  bottom: 80px; /* avoids overlapping footer */
+  right: 20px;
+  background: #25D366;
+  color: #fff;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 22px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.value-card img {
+    width:60px;
+    margin-bottom:15px;
+}
+.value-card p {
+    font-size:14px;
+    color:#555;
+}
+.box img {
+    width:100%;
+    max-height:220px;
+    object-fit:cover;
+    border-radius:12px;
+    margin-bottom:15px;
+}
+.section h2 {
+    font-size:32px;
+    font-weight:600;
+}
+.footer-logo {
+height:40px;
+margin-bottom:10px;
+}
+.footer-logo {
+height:40px;
+margin-bottom:10px;
+}
+
+.footer-container {
+display:flex;
+justify-content:space-between;
+flex-wrap:wrap;
+gap:30px;
+}
+
+.footer-links ul {
+list-style:none;
+padding:0;
+margin:0;
+}
+
+.footer-links li {
+margin:8px 0;
+}
+
+.footer-links a {
+color:#fff;
+text-decoration:none;
+font-size:14px;
+}
+
+.footer-links a:hover {
+color:#ff6600;
+}
+
+.footer-brand,
+.footer-links,
+.footer-contact {
+flex:1;
+min-width:200px;
+}
+
+.footer-contact p {
+margin:6px 0;
+}
